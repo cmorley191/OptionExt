@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>OptionExt</id>
+    <version>0.0.1</version>
+    <authors>nathan wilson</authors>
+    <owners>nathan wilson</owners>
+    <description>Additional extensions for the Option type, including a computation expression</description>
+    <summary>Additional extensions for the Option type, including a computation expression</summary>
+    <releaseNotes>Initial release.  See the README.</releaseNotes>
+    <licenseUrl>https://github.com/ntwilson/OptionExt/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ntwilson/OptionExt</projectUrl>
+    <tags>F# Option Computation-Expression</tags>
+
+    <dependencies>
+      <dependency id="FSharp.Core" version="4.1.17" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="README.md" target="" />
+    <file src="OptionExt\bin\Release\netstandard2.0\OptionExt.dll" target="lib\netstandard2.0" />
+    <file src="OptionExt\bin\Release\netstandard2.0\OptionExt.XML" target="lib\netstandard2.0" />
+    <file src="OptionExt\bin\Release\netstandard2.0\OptionExt.pdb" target="lib\netstandard2.0" />
+    <file src="OptionExt\bin\Release\net45\OptionExt.dll" target="lib\net45" />
+    <file src="OptionExt\bin\Release\net45\OptionExt.XML" target="lib\net45" />
+    <file src="OptionExt\bin\Release\net45\OptionExt.pdb" target="lib\net45" />
+    <file src="OptionExt\**\*.fs" target="src" />
+  </files>
+</package>

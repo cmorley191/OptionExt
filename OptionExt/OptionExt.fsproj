@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <DocumentationFile>bin\$(Configuration)\netstandard2.0\$(AssemblyName).XML</DocumentationFile>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Option.fs" />
+    <Compile Include="OptionExpression.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.1.17" />
+  </ItemGroup>
+
+</Project>
