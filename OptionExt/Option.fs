@@ -23,3 +23,15 @@ let ofFloat (x:float) =
   if Double.IsNaN x 
   then None
   else Some x 
+
+let ofResult = function
+  | Ok v -> Some v
+  | Error _ -> None
+
+let toResult err = function
+  | Some v -> Ok v
+  | None -> Error err
+
+let toResultWith errThunk = function
+  | Some v -> Ok v
+  | None -> Error (errThunk ())

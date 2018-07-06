@@ -43,3 +43,24 @@ let ``Extracts a value from an option, throwing an appropriate error otherwise``
 
   test <@ ex.Message = "Can't find" @>
 
+
+[<Test>]
+let ``can convert to and from a Result`` () =
+  test 
+    <@
+      Some 4 |> Option.toResult "didn't work" = Ok 4
+      &&
+      Some 4 |> Option.toResultWith (fun() -> failwith "shouldn't have run this thunk") = Ok 4
+
+      &&
+
+      None |> Option.toResult "didn't work" = Error "didn't work"
+      &&
+      None |> Option.toResultWith (fun() -> "didn't work") = Error "didn't work"
+
+      &&
+
+      Ok 4 |> Option.ofResult = Some 4
+      &&
+      Error "didn't work" |> Option.ofResult = None
+    @>

@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>OptionExt</id>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <authors>nathan wilson</authors>
     <owners>nathan wilson</owners>
     <description>Additional extensions for the Option type, including a computation expression</description>
     <summary>Additional extensions for the Option type, including a computation expression</summary>
-    <releaseNotes>Initial release.  See the README.</releaseNotes>
+    <releaseNotes>Add conversion functions to/from the Result type</releaseNotes>
     <licenseUrl>https://github.com/ntwilson/OptionExt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ntwilson/OptionExt</projectUrl>
     <tags>F# Option Computation-Expression</tags>
