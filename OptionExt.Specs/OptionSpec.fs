@@ -5,6 +5,8 @@ open Swensen.Unquote
 
 open OptionExt
 
+let x = ()
+
 [<Test>]
 let ``Converts NaNs to Nones, but any other float to Some`` () =
   test

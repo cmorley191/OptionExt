@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ntwilson/OptionExt.svg?branch=master)](https://travis-ci.com/ntwilson/OptionExt)
+
 # OptionExt
 This library contains additional extensions the F# Option module, as well as a computation expression for Options.
 
