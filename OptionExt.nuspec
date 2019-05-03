@@ -7,13 +7,13 @@
     <owners>nathan wilson</owners>
     <description>Additional extensions for the Option type, including a computation expression</description>
     <summary>Additional extensions for the Option type, including a computation expression</summary>
-    <releaseNotes>Add new extensions for the F# 4.6 ValueOption type</releaseNotes>
+    <releaseNotes>Add new extensions for the F# 4.5 ValueOption type</releaseNotes>
     <licenseUrl>https://github.com/ntwilson/OptionExt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ntwilson/OptionExt</projectUrl>
     <tags>F# Option Computation-Expression</tags>
 
     <dependencies>
-      <dependency id="FSharp.Core" version="4.6.2" />
+      <dependency id="FSharp.Core" version="4.5.4" />
     </dependencies>
   </metadata>
   <files>
