@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <Compile Include="Option.fs" />
+    <Compile Include="ValueOption.fs" />
     <Compile Include="OptionExpression.fs" />
+    <Compile Include="ValueOptionExpression.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FSharp.Core" Version="4.1.17" />
+    <PackageReference Include="FSharp.Core" Version="4.5.4" />
   </ItemGroup>
 
 </Project>

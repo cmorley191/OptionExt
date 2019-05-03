@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>OptionExt</id>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <authors>nathan wilson</authors>
     <owners>nathan wilson</owners>
     <description>Additional extensions for the Option type, including a computation expression</description>
     <summary>Additional extensions for the Option type, including a computation expression</summary>
-    <releaseNotes>Add conversion functions to/from the Result type</releaseNotes>
-    <licenseUrl>https://github.com/ntwilson/OptionExt/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>Add new extensions for the F# 4.5 ValueOption type</releaseNotes>
+    <license type="expression">CC0-1.0</license>
     <projectUrl>https://github.com/ntwilson/OptionExt</projectUrl>
     <tags>F# Option Computation-Expression</tags>
 
     <dependencies>
-      <dependency id="FSharp.Core" version="4.1.17" />
+      <dependency id="FSharp.Core" version="4.5.4" />
     </dependencies>
   </metadata>
   <files>
