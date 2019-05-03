@@ -35,3 +35,12 @@ let toResult err = function
 let toResultWith errThunk = function
   | Some v -> Ok v
   | None -> Error (errThunk ())
+
+let ofVOption = function
+  | ValueSome v -> Some v
+  | ValueNone -> None
+
+let toVOption = function
+  | Some v -> ValueSome v
+  | None -> ValueNone
+  

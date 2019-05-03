@@ -66,3 +66,18 @@ let ``can convert to and from a Result`` () =
       &&
       Error "didn't work" |> ValueOption.ofResult = ValueNone
     @>
+
+[<Test>]
+let ``can convert to and from an Option`` () =
+  test 
+    <@
+      Some 4 |> ValueOption.ofOption = ValueSome 4
+      &&
+      None |> ValueOption.ofOption = ValueNone
+
+      &&
+
+      ValueSome 4 |> ValueOption.toOption = Some 4
+      &&
+      ValueNone |> ValueOption.toOption = None
+    @>
