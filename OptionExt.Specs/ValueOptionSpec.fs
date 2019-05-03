@@ -16,16 +16,11 @@ let ``Converts NaNs to ValueNones, but any other float to ValueSome`` () =
       ValueOption.ofFloat 5. = ValueSome 5.
     @>
 
-// this is needed until travis CI supports the dotnet sdk v 2.2.202+, which has F# 4.6 support
-let voptionMap f = function
-  | ValueSome v -> ValueSome <| f v
-  | ValueNone -> ValueNone 
-
 [<Test>]
 let ``Collects multiple Options such that any ValueNone will make the whole thing ValueNone`` () =
   test
     <@
-      ValueOption.collect [ ValueSome 1; ValueSome 2; ValueSome 3; ValueSome 4 ] |> voptionMap Seq.toList = ValueSome [1 .. 4]
+      ValueOption.collect [ ValueSome 1; ValueSome 2; ValueSome 3; ValueSome 4 ] |> ValueOption.map Seq.toList = ValueSome [1 .. 4]
       &&
       ValueOption.collect [ ValueNone; ValueSome 2; ValueSome 3; ValueSome 4 ] = ValueNone
       &&

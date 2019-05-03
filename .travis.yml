@@ -1,7 +1,8 @@
+dist: bionic
 language: csharp
 solution: OptionExt.sln
 mono: none
-dotnet: 2.2.105
+dotnet: 2.2.202
 script:
   - dotnet build -f netcoreapp2.0
   - dotnet test -f netcoreapp2.0
